@@ -1,0 +1,47 @@
+.header_container .header_top_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header_container .header_top_list .item {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #323232;
+}
+
+.header_container .header_top_list .currency, header .header_container .header_top_list .language {
+    cursor: pointer;
+}
+
+.header_container .header_top_list .item .header_top_text {
+    color: #323232;
+}
+
+@media (min-width: 1281px) and (max-width: 1399px) {
+    .header_container {
+        /* padding: 0 25px; */
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header_container {
+        /* padding: 0 25px; */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+}

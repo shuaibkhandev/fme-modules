@@ -1,0 +1,13 @@
+.footer_container .footer_bg {
+    background-color: #212121;
+}
+
+footer .foot_top_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid rgba(80,93,113,.502);
+}

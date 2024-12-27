@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing Page</title>
+    <link rel="stylesheet" href="../assets/style/css/pushbar.css" />
+    <link rel="stylesheet" href="../assets/style/css/global.css" />
+    <link rel="stylesheet" href="../assets/style/css/header.css" />
+    <link rel="stylesheet" href="../assets/style/css/footer.css" />
+    <link rel="stylesheet" href="../assets/style/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="../assets/style/css/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="../assets/style/css/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../assets/fonts/font.css" />
+  </head>
+  <body>
+    <section class="page_wrapper listing_page">
+      <!-- Header -->
+      <header class="header_container">
+        <aside
+          data-pushbar-id="lang"
+          data-pushbar-direction="right"
+          class="main_sidebar"
+          aria-label="Language selection sidebar"
+        >
+          <div class="lang_cur_block">
+            <div class="lang_cur_inner">
+              <div class="side_bar_top">
+                <h3 class="title">Select a Language</h3>
+                <div
+                  class="close_side_bar"
+                  data-pushbar-close
+                  aria-label="Close language selection"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="lang_cur_list">
+                  <li
+                    value="en"
+                    class="list_item active"
+                    aria-label="English language selected"
+                  >
+                    English
+                  </li>
+                  <li
+                    value="ur"
+                    class="list_item"
+                    aria-label="Select Urdu language"
+                  >
+                    Urdu
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom_block">
+              <button
+                class="secondary_cta"
+                aria-label="Confirm language selection"
+              >
+                Confirm selection
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <aside
+          data-pushbar-id="curr"
+          data-pushbar-direction="right"
+          class="main_sidebar"
+          aria-label="Currency selection sidebar"
+        >
+          <div class="lang_cur_block">
+            <div class="lang_cur_inner">
+              <div class="side_bar_top">
+                <h3 class="title">Select a Currency</h3>
+                <div
+                  class="close_side_bar"
+                  data-pushbar-close
+                  aria-label="Close currency selection"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </div>
+                <ul class="lang_cur_list">
+                  <li class="list_item active" aria-label="USD selected">
+                    USD
+                  </li>
+                  <li class="list_item" aria-label="Select EUR currency">
+                    EUR
+                  </li>
+                  <li class="list_item" aria-label="Select GBP currency">
+                    GBP
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom_block">
+              <button
+                class="secondary_cta"
+                aria-label="Confirm currency selection"
+              >
+                Confirm selection
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="header">
+          <div class="logo">
+            <a href="#" aria-label="Go to homepage">
+              <picture>
+                <source
+                  width="auto"
+                  height="auto"
+                  media="(min-width:768px)"
+                  srcset="../assets/images/logo.webp"
+                />
+                <source
+                  width="auto"
+                  height="auto"
+                  media="(max-width:767px)"
+                  srcset="../assets/images/resp-logo.webp"
+                />
+                <img
+                  width="auto"
+                  height="auto"
+                  class="loading_action"
+                  src="../assets/images/logo.webp"
+                  alt="logo"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <nav class="navigation">
+            <aside
+              data-pushbar-id="menu"
+              data-pushbar-direction="right"
+              aria-label="Navigation menu"
+            >
+              <div>
+                <div class="side_bar_head">
+                  <div class="logo">
+                    <a href="#">
+                      <picture>
+                        <source
+                          width="auto"
+                          height="auto"
+                          media="(min-width:768px)"
+                          srcset="../assets/images/logo.webp"
+                        />
+                        <source
+                          width="auto"
+                          height="auto"
+                          media="(max-width:767px)"
+                          srcset="../assets/images/resp-logo.webp"
+                        />
+                        <img
+                          width="auto"
+                          height="auto"
+                          class="loading_action"
+                          src="../assets/images/logo.webp"
+                          alt="logo"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    class="close_side_bar"
+                    data-pushbar-close
+                    aria-label="Close navigation menu"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                </div>
+
+                <ul class="nav_bar">
+                  <li class="nav_list">
+                    <a
+                      href="#!"
+                      class="nav_link"
+                      aria-label="Go to Prestashop Modules"
+                    >
+                      Prestashop Modules
+                    </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#!" class="nav_link" aria-label="Go to Services">
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#!" class="nav_link" aria-label="Go to Portfolio">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#!" class="nav_link" aria-label="Go to Free Stuff">
+                      Free Stuff
+                    </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#!" class="nav_link" aria-label="Go to Support">
+                      Support
+                    </a>
+                  </li>
+                  <li class="nav_list">
+                    <a href="#!" class="nav_link" aria-label="Go to Blog"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </nav>
+
+          <ul class="header_icon">
+            <li
+              class="item currency_list"
+              data-pushbar-target="curr"
+              aria-label="Open currency selection sidebar"
+            >
+              <span class="curr_icon"> $ </span>
+              <span class="curr"
+                >USD
+                <img src="../assets/images/down arrow.png" alt="account icon"
+              /></span>
+            </li>
+
+            <li
+              class="item language_list"
+              data-pushbar-target="lang"
+              aria-label="Open language selection sidebar"
+            >
+              <span class="lang_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 12C5.17422 12 4.39645 11.8422 3.66667 11.5267C2.93689 11.2111 2.30134 10.7822 1.76 10.24C1.21867 9.69778 0.789781 9.06222 0.473337 8.33333C0.156893 7.60444 -0.000885154 6.82667 3.73483e-06 6C3.73483e-06 5.172 0.157781 4.39355 0.473337 3.66467C0.788892 2.93578 1.21778 2.30089 1.76 1.76C2.30223 1.21911 2.93778 0.790445 3.66667 0.474001C4.39556 0.157556 5.17334 -0.000443509 6 9.35016e-07C6.828 9.35016e-07 7.60645 0.157779 8.33533 0.473334C9.06422 0.78889 9.69933 1.21778 10.2407 1.76C10.782 2.30222 11.2104 2.93711 11.526 3.66467C11.8416 4.39222 11.9996 5.17067 12 6C12 6.82578 11.8422 7.60355 11.5267 8.33333C11.2111 9.06311 10.7822 9.69866 10.24 10.24C9.69778 10.7813 9.06289 11.2102 8.33533 11.5267C7.60778 11.8431 6.82933 12.0009 6 12ZM6 11.3387C6.39111 10.836 6.71378 10.3424 6.968 9.858C7.22222 9.37355 7.42867 8.83133 7.58733 8.23133H4.41267C4.58867 8.86511 4.79934 9.42422 5.04467 9.90866C5.29 10.3931 5.60845 10.8698 6 11.3387ZM5.15134 11.2387C4.84022 10.872 4.55622 10.4187 4.29934 9.87866C4.04245 9.33911 3.85134 8.78978 3.726 8.23066H1.16867C1.55089 9.06 2.09245 9.74 2.79334 10.2707C3.49422 10.8013 4.28 11.124 5.15067 11.2387M6.848 11.2387C7.71822 11.124 8.504 10.8013 9.20533 10.2707C9.90667 9.74 10.4482 9.06 10.83 8.23066H8.274C8.10511 8.79822 7.89245 9.352 7.636 9.892C7.37911 10.4316 7.11645 10.8804 6.848 11.2387ZM0.89667 7.564H3.58667C3.536 7.29066 3.50045 7.02422 3.48 6.76467C3.45867 6.50511 3.448 6.25022 3.448 6C3.448 5.74978 3.45845 5.49489 3.47934 5.23533C3.50022 4.97578 3.53578 4.70911 3.586 4.43533H0.898004C0.825559 4.66644 0.768892 4.91822 0.728004 5.19067C0.687115 5.46311 0.66667 5.73289 0.66667 6C0.66667 6.26711 0.686892 6.53689 0.727337 6.80933C0.767781 7.08178 0.824448 7.33333 0.897337 7.564M4.254 7.564H7.746C7.79667 7.29066 7.83222 7.02844 7.85267 6.77733C7.87311 6.52622 7.884 6.26711 7.88533 6C7.88667 5.73289 7.87622 5.47378 7.854 5.22267C7.83178 4.97155 7.79622 4.70933 7.74733 4.436H4.25334C4.20311 4.70933 4.16756 4.97155 4.14667 5.22267C4.12578 5.47378 4.11534 5.73289 4.11534 6C4.11534 6.26711 4.12578 6.52622 4.14667 6.77733C4.16756 7.02844 4.20378 7.29066 4.254 7.564ZM8.41333 7.564H11.1027C11.1751 7.33289 11.2318 7.08133 11.2727 6.80933C11.3136 6.53733 11.3338 6.26755 11.3333 6C11.3329 5.73244 11.3127 5.46267 11.2727 5.19067C11.2327 4.91867 11.176 4.66711 11.1027 4.436H8.41267C8.46333 4.70933 8.49889 4.97578 8.51933 5.23533C8.54067 5.49489 8.55133 5.74978 8.55133 6C8.55133 6.25022 8.54089 6.50511 8.52 6.76467C8.49911 7.02422 8.46356 7.29089 8.41333 7.56466M8.27467 3.76933H10.8307C10.44 2.92311 9.90489 2.24311 9.22533 1.72933C8.54533 1.21556 7.75311 0.88889 6.84867 0.749334C7.15978 1.15822 7.43956 1.62622 7.688 2.15333C7.93645 2.68044 8.132 3.21911 8.27467 3.76933ZM4.41267 3.76933H7.58733C7.41133 3.14356 7.19422 2.57778 6.936 2.072C6.67778 1.56622 6.36578 1.096 6 0.661334C5.63422 1.09556 5.32222 1.56578 5.064 2.072C4.80622 2.57778 4.58911 3.14356 4.41267 3.76933ZM1.16934 3.76933H3.72534C3.86845 3.21867 4.064 2.68 4.312 2.15333C4.56 1.62667 4.83978 1.15845 5.15134 0.748667C4.23845 0.888667 3.44422 1.21756 2.76867 1.73533C2.09311 2.25311 1.55978 2.93089 1.16867 3.76867"
+                    fill="#3F4B5D"
+                  ></path>
+                </svg>
+              </span>
+              <span class="lang">
+                English
+                <img src="../assets/images/down arrow.png" alt="account icon"
+              /></span>
+            </li>
+
+            <li class="account">
+              <a class="loading_action" aria-label="Login" href="#">
+                <img src="../assets/images/account.png" alt="account icon" />
+                <span>Login</span>
+              </a>
+            </li>
+            <li class="cart loading_action">
+              <a aria-label="Go To Cart" class="loading_action" href="/cart">
+                <img src="../assets/images/cart.png" alt="account icon" />
+
+                <span class="cart_count">1</span>
+              </a>
+            </li>
+            <li class="resp_menu">
+              <button
+                aria-label="Open Menu"
+                data-pushbar-target="menu"
+                class="openMenu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <div
+            class="search_overlay"
+            style="background-color: rgba(54, 54, 54, 0.4)"
+          ></div>
+
+          <div class="search_field_head">
+            <div class="search_outer header_search">
+              <div class="dialog_block search">
+                <button class="close_search_btn">
+                  <svg
+                    class="gridicon gridicons-chevron-left"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586z"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+
+                <button type="submit" class="search_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M23 24L17.692 18.4507M17.692 18.4507C18.5999 17.5014 19.3201 16.3745 19.8115 15.1343C20.3029 13.8941 20.5558 12.5648 20.5558 11.2224C20.5558 9.87995 20.3029 8.55067 19.8115 7.31044C19.3202 6.0702 18.5999 4.9433 17.692 3.99406C16.784 3.04483 15.7061 2.29185 14.5198 1.77813C13.3335 1.26441 12.062 1 10.7779 1C9.49386 1 8.22238 1.26441 7.03607 1.77813C5.84976 2.29185 4.77185 3.04483 3.86389 3.99406C2.03017 5.91113 1 8.51123 1 11.2224C1 13.9335 2.03017 16.5336 3.86389 18.4507C5.6976 20.3677 8.18465 21.4447 10.7779 21.4447C13.3712 21.4447 15.8582 20.3677 17.692 18.4507Z"
+                      stroke="#4E4E4E"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+
+                <input
+                  type="search"
+                  class="srch_input"
+                  id="search"
+                  placeholder="Type a command or search"
+                  value=""
+                />
+              </div>
+            </div>
+            <ul class="search-suggestions" id="suggestions">
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_1.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                    <p class="pd_type">(3.0.1)</p>
+                  </div>
+                  <p class="price">€47</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_2.png" alt="srch_2" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >PrestaShop Cart Countdown Timer Module</a
+                    >
+                    <p class="pd_type">(2.0.1)</p>
+                  </div>
+                  <p class="price">€35</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_3.png" alt="srch_3" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Mobile App Builder Native for iOS, Andriod &
+                      PrestaMobApp</a
+                    >
+                    <p class="pd_type">(2.1.1)</p>
+                  </div>
+                  <p class="price">€65</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_1.png" alt="srch_1" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Buy from External Link Module</a
+                    >
+                    <p class="pd_type">(3.0.1)</p>
+                  </div>
+                  <p class="price">€47</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_2.png" alt="srch_2" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >PrestaShop Cart Countdown Timer Module</a
+                    >
+                    <p class="pd_type">(2.0.1)</p>
+                  </div>
+                  <p class="price">€35</p>
+                </div>
+              </li>
+              <li class="search_suggest_list">
+                <div class="search_suggest_link">
+                  <a
+                    class="loading_action"
+                    href="/woocommerce-plugins-extensions/shop-as-a-customer"
+                  >
+                    <img src="../assets/images/srch_3.png" alt="srch_3" />
+                  </a>
+                  <div class="search_cnt_col">
+                    <a class="loading_action search_pd_name" href="#"
+                      >Prestashop Mobile App Builder Native for iOS, Andriod &
+                      PrestaMobApp</a
+                    >
+                    <p class="pd_type">(2.1.1)</p>
+                  </div>
+                  <p class="price">€65</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <!-- Banner Section -->
+        <section class="main_banner_bg listing_banner">
+          <div class="main_container">
+            <div class="banner_inner">
+              <div class="banner_block">
+                <h1 class="secondary_banner_title">Prestashop Modules</h1>
+                <p class="secondary_banner_text">
+                  Choose from over 200+ Prestashop Modules.
+                </p>
+              </div>
+              <div class="banner_block">
+                <div class="search">
+                  <div class="banner_search_iner">
+                    <input
+                      type="text"
+                      name="search"
+                      id=""
+                      placeholder="What are you looking for?"
+                      aria-label="Enter your search term"
+                    />
+                    <button class="search_cta" aria-label="Submit search">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Breadcrumb Section -->
+        <section class="breadcrumb_section main_container">
+          <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+            <ul class="breadcrumb_listing">
+              <li class="breadcrumb_item">
+                <a href="/">Home / &nbsp;</a><span>Fme Modules Prestashop</span>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- Best Sellers Modules Section -->
+        <section class="best_sellers_section main_container section_padding">
+          <h2 class="best_sellers_title">Best Sellers Modules</h2>
+
+          <ul class="best_sellers_listing grid_3 inner_sec_top">
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_1.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  The Prestashop Buy From External Link Module offers a
+                  versatile solution for enhancing your product pages within ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Purchase from External Link</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_2.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">PrestaShop Cart Countdown Timer Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  Prestashop Cart Countdown Timer module displays a countdown
+                  timer as soon as a customer adds a product ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="Quick Purchase Icon"
+                    />
+                  </div>
+                  <span>Force Buyers for Quick Purchase</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_3.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">
+                    Prestashop Product Video or Embed Youtube, Vimeo Videos
+                  </h3>
+                </a>
+
+                <p class="primary_text">
+                  PrestaShop Product Video and YouTube Module improves user
+                  engagement on your product pages you to add ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="Video Icon"
+                    />
+                  </div>
+                  <span>Add insightful videos</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Module Explorer Section -->
+        <section class="module_explorer_section main_container">
+          <div class="module_explorer_inner">
+            <ul class="module_explorer_header">
+              <li>
+                Showing <strong>15</strong>
+                <img
+                  src="../assets/images/down arrow.png"
+                  alt="Dropdown arrow icon"
+                />
+              </li>
+              <li>
+                Best Seller
+                <img
+                  src="../assets/images/down arrow.png"
+                  alt="Dropdown arrow icon"
+                />
+              </li>
+              <li>All</li>
+            </ul>
+            <ul class="module_listing">
+              <li class="module_item">
+                <button class="module_btn active">
+                  Administration Tools <span>(13)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  B2B Modules <span>(23)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  Advertising & Marketing <span>(05)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">Check Out <span>(11)</span></button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  Content Management <span>(20)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">SEO <span>(11)</span></button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">Media <span>(11)</span></button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  Revenue Drivers <span>(13)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  Price & Promotion <span>(13)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">
+                  Social Networks <span>(13)</span>
+                </button>
+              </li>
+              <li class="module_item">
+                <button class="module_btn">Catalog <span>(11)</span></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter_module_category resp" data-pushbar-target="module">
+            <span>Filter</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <mask
+                id="mask0"
+                mask-type="alpha"
+                maskUnits="userSpaceOnUse"
+                x="4"
+                y="4"
+                width="16"
+                height="17"
+              >
+                <path
+                  d="M18.5949 4.00002H5.41494C4.86294 3.99702 4.41194 4.44202 4.40894 4.99402C4.40794 5.26302 4.51394 5.52102 4.70494 5.71002L10.0049 11V17L14.0049 21V11L19.2949 5.71002C19.6869 5.32102 19.6899 4.68802 19.3009 4.29602C19.1139 4.10802 18.8599 4.00102 18.5949 4.00002Z"
+                  fill="white"
+                ></path>
+              </mask>
+              <g mask="url(#mask0)">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="#3F4B5D"
+                  fill-opacity="0.45"
+                ></rect>
+              </g>
+            </svg>
+          </div>
+
+          <aside
+            data-pushbar-id="module"
+            data-pushbar-direction="left"
+            class="main_sidebar"
+          >
+            <div class="module_block">
+              <div class="module_inner">
+                <div class="side_bar_top">
+                  <div class="close_side_bar" data-pushbar-close>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <ul class="module_explorer_header">
+                    <li>
+                      Showing <strong>15</strong>
+                      <img
+                        src="../assets/images/down arrow.png"
+                        alt="Dropdown arrow icon"
+                      />
+                    </li>
+                    <li>
+                      Best Seller
+                      <img
+                        src="../assets/images/down arrow.png"
+                        alt="Dropdown arrow icon"
+                      />
+                    </li>
+                    <li>All</li>
+                  </ul>
+                </div>
+
+                <ul class="module_list">
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Administration Tools <span>(13)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      B2B Modules <span>(23)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Advertising & Marketing <span>(05)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Check Out <span>(11)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Content Management <span>(20)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">SEO <span>(11)</span></button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">Media <span>(11)</span></button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Revenue Drivers <span>(13)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Price & Promotion <span>(13)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Social Networks <span>(13)</span>
+                    </button>
+                  </li>
+                  <li class="module_item">
+                    <button class="module_btn">
+                      Catalog <span>(11)</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <!-- Prestashop Modules Section -->
+        <section class="prestashop_modules_section main_container section_padding">
+          <div class="sec_top_row">
+            <div class="cnt">
+              <h2 class="tertiary_title">Need a Prestashop Module?</h2>
+              <p class="tertiary_text">
+                Download some of the Best PrestaShop Modules with just a simple
+                click and stay ahead of the competition. All Prestashop Addons
+                include detailed and step by step instructions manual and
+                instant support forever.The future of eCommerce is flourishing,
+                FME Modules brings out of the box solutions with its Best
+                PrestaShop Modules to break up new horizons for your business.
+                The key ingredients our modules are based on include
+                reliability, integrity and self-satisfaction to build friendly
+                and lasting relations with our customers. Our modules serve the
+              </p>
+            </div>
+          </div>
+
+          <ul class="prestashop_modules_listing grid_3 inner_sec_top">
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_1.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  The Prestashop Buy From External Link Module offers a
+                  versatile solution for enhancing your product pages within ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img src="../assets/images/purchase_link.webp" alt="Purchase from External Link Icon" />
+                  </div>
+                  <span>Purchase from External Link</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_1.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  The Prestashop Buy From External Link Module offers a
+                  versatile solution for enhancing your product pages within ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img src="../assets/images/purchase_link.webp" alt="Purchase from External Link Icon" />
+                  </div>
+                  <span>Purchase from External Link</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_1.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  The Prestashop Buy From External Link Module offers a
+                  versatile solution for enhancing your product pages within ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img src="../assets/images/purchase_link.webp" alt="Purchase from External Link Icon" />
+                  </div>
+                  <span>Purchase from External Link</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_1.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">Prestashop Buy from External Link Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  The Prestashop Buy From External Link Module offers a
+                  versatile solution for enhancing your product pages within ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img src="../assets/images/purchase_link.webp" alt="Purchase from External Link Icon" />
+                  </div>
+                  <span>Purchase from External Link</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_2.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">PrestaShop Cart Countdown Timer Module</h3>
+                </a>
+
+                <p class="primary_text">
+                  Prestashop Cart Countdown Timer module displays a countdown
+                  timer as soon as a customer adds a product ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="External Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Force Buyers for Quick Purchase</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_3.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">
+                    Prestashop Product Video or Embed Youtube, Vimeo Videos
+                  </h3>
+                </a>
+
+                <p class="primary_text">
+                  PrestaShop Product Video and YouTube Module improves user
+                  engagement on your product pages you to add ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="External Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Add insightful videos</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_4.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">
+                    Prestashop Events Module Sell Tickets For Events Online
+                  </h3>
+                </a>
+
+                <p class="primary_text">
+                  Create and manage events on your website easily through
+                  Prestashop Events module. Create events attach media ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="External Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Help manage your promotions</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="badge">
+                <img src="../assets/images/badge.png" alt="19% OFF Badge" /> 19%
+                OFF
+              </div>
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_5.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">
+                    Prestashop Restrict Payment Methods Module
+                  </h3>
+                </a>
+                <p class="primary_text">
+                  Prestashop Restrict Payment Methods Addon lets you restrict
+                  payment methods on your store for specific customers Our addon
+                  offers ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="External Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Restrict Payment Methods</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+            <li class="prod_card">
+              <div class="prod_info">
+                <a href="" class="prod_name">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/prod_6.png"
+                     aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="name">
+                    Prestashop Limit Order Quantity Cart Quantity Module
+                  </h3>
+                </a>
+
+                <p class="primary_text">
+                  Prestashop Limit Order Quantity Module gives you the option to
+                  specify the quantity of a product that customers can buy at a
+                  time ...
+                </p>
+                <a href="#" class="buy_link">
+                  <div class="image_block">
+                    <img
+                      src="../assets/images/purchase_link.webp"
+                      alt="External Purchase Link Icon"
+                    />
+                  </div>
+                  <span>Restrict Quantity for Order</span>
+                </a>
+              </div>
+              <div class="prod_price_row">
+                <div class="prod_rating" aria-label="Product Rating">
+                  <div class="prod_stars">
+                    <span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img
+                        src="../assets/images/star.png"
+                        alt="Star Icon" /></span
+                    ><span class="star">
+                      <img src="../assets/images/star.png" alt="Star Icon"
+                    /></span>
+                  </div>
+                  <span class="prod_rating_count">(22)</span>
+                </div>
+
+                <div class="prod_price">
+                  <div class="price">
+                    <span class="actual_price">€ 49</span>
+                  </div>
+                  <a href="" class="prod_buy" aria-label="Buy Now">Buy Now</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Paginaion -->
+          <div class="pagination_container" aria-label="Pagination Controls">
+            <a
+              href="#"
+              class="pagination_arrow pagination_arrow_left"
+              aria-label="Previous Page"
+              ><img src="../assets/images/left arrow.png" alt="Previous"
+            /></a>
+            <div class="pagination_numbers">
+              <a href="#" class="pagination_number active" aria-label="Page 1"
+                >1</a
+              >
+              <a href="#" class="pagination_number" aria-label="Page 2">2</a>
+              <a href="#" class="pagination_number" aria-label="Page 3">3</a>
+              <a href="#" class="pagination_number" aria-label="Page 4">4</a>
+              <a href="#" class="pagination_number" aria-label="Page 5">5</a>
+            </div>
+            <a
+              href="#"
+              class="pagination_arrow pagination_arrow_right"
+              aria-label="Next Page"
+              ><img src="../assets/images/right arrow.png" alt="Next"
+            /></a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer_container">
+        <div class="main_container">
+          <div class="foot_top_row">
+            <div class="top_cnt">
+              <h3 class="main_text">Start a Project With Prestashop Modules</h3>
+              <p class="sub_text">
+                Prestashop restrict payment methods addons lets you restrict
+                payment methods on your store for specific customers our addons
+                offers
+              </p>
+            </div>
+            <div class="foot_top_cta">
+              <a class="secondary_cta" href="/rfq" aria-label="Request a Quote"
+                >Request a Quote</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_inner_sec">
+          <div class="footer_block">
+            <div class="foot_logo">
+              <img
+                src="../assets/images/footer_logo.webp"
+                alt="footer Logo"
+                class="logo"
+              />
+              <p class="foot_logo_text">
+                FME Modules is the top-notch PrestaShop migration service.
+              </p>
+            </div>
+          </div>
+          <div class="footer_block">
+            <h3 class="foot_title">Corporate</h3>
+            <ul class="foot_list">
+              <li class="foot_links">
+                <a class="foot_text" href="#">Modules</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Portfolio</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_block">
+            <h3 class="foot_title">Knowledge Base</h3>
+            <ul class="foot_list">
+              <li class="foot_links">
+                <a class="foot_text" href="#">Free Stuff</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Services</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Stuff</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_block">
+            <h3 class="foot_title">Legal</h3>
+            <ul class="foot_list">
+              <li class="foot_links">
+                <a class="foot_text" href="#">Privacy Policy</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Terms & Conditions</a>
+              </li>
+              <li class="foot_links">
+                <a class="foot_text" href="#">Customer Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_block">
+            <div class="foot_contact_details">
+              <h2 class="foot_title">Say Hello</h2>
+              <div class="foot_list">
+                <p class="foot_text">support@fmemodules.com</p>
+                <p class="foot_phone">+(919) 335-6315</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <div class="copy_right">
+            <p class="primary_text">
+              © 2023 <a href="#">FME EModules.</a> All Rights Reserved.
+            </p>
+          </div>
+          <div class="payment_methods">
+            <img src="../assets/images/payment_card.webp" alt="payment_card" />
+          </div>
+
+          <ul class="social_icons">
+            <li class="social_item">
+              <a href="#"> <img src="../assets/images/fb.webp" alt="fb" /> </a>
+            </li>
+            <li class="social_item">
+              <a href="#">
+                <img src="../assets/images/twitter.webp" alt="twitter" />
+              </a>
+            </li>
+            <li class="social_item">
+              <a href="#">
+                <img src="../assets/images/linkedin.webp" alt="linkedin" />
+              </a>
+            </li>
+            <li class="social_item">
+              <a href="#">
+                <img src="../assets/images/youtube.webp" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/pushbar.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

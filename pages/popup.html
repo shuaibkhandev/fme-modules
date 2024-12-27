@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Popup</title>
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.popup_overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(109, 192, 52, 0.4);
+}
+
+.popup_outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_block {
+  width: 550px;
+  min-height: 450px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.popup_block .popup_header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.popup_block .popup_header .title {
+  font-size: 35px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a2130;
+}
+
+.popup_block .popup_header .text {
+  color: #6d6d75;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.popup_block .popup_main {
+  margin-top: 10px;
+  padding: 0px 40px;
+}
+
+.popup_block .popup_main .popup_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.popup_block .popup_main .popup_form .form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup_block .popup_main .popup_form .form_row .popup_input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-size: 19px;
+  outline: none;
+}
+.popup_block .popup_main .popup_form .form_row .popup_input:focus {
+  border-color: rgba(109, 192, 52, 1);
+}
+
+.popup_block .popup_main .popup_form .form_row .popup_input:focus::placeholder {
+  color: rgba(109, 192, 52, 1);
+}
+.popup_block .popup_main .popup_form .form_row .login_btn {
+  font-size: 19px;
+  line-height: 22px;
+  padding: 12px 38px;
+  border-radius: 50px;
+  background-color: rgba(109, 192, 52, 1);
+  border: 1px solid rgba(109, 192, 52, 1);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.forget_password {
+  color: #606060;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.popup_block .popup_footer {
+  margin-top: auto;
+  background-color: #e8f1e1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup_block .popup_footer .text {
+  color: #6d6d75;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.popup_block .popup_footer .social_login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.popup_block .popup_footer .social_login .social_login_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.popup_block .popup_close_btn{
+    background-color: #6eb234;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="popup_overlay" id="popupOverlay" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDescription">
+    <div class="popup_outer">
+      <div class="popup_block">
+        <div class="popup_header">
+          <h2 class="title" id="popupTitle">Already Registerd</h2>
+          <p class="text" id="popupDescription">Enter your username and Passowrd</p>
+        </div>
+        <div class="popup_main">
+          <form class="popup_form" method="POST">
+            <div class="form_row">
+              <input type="text" name="username" placeholder="Username" class="popup_input">
+            </div>
+            <div class="form_row">
+              <input type="password" name="password" placeholder="Password" class="popup_input">
+            </div>
+            <div class="form_row">
+              <button type="submit" class="login_btn">Login</button>
+              <a href="#" class="forget_password">Forget your password?</a>
+            </div>
+          </form>
+        </div>
+        <div class="popup_footer">
+          <p class="text">or login With</p>
+          <div class="social_login">
+            <button class="social_login_btn" type="button" aria-label="Login with Google">
+              <img src="../assets/images/google.png" alt="Google Logo">
+            </button>
+            <button class="social_login_btn" type="button" aria-label="Login with Facebook">
+              <img src="../assets/images/facebook.png" alt="Facebook Logo">
+            </button>
+            <button class="social_login_btn" type="button" aria-label="Login with Twitter">
+              <img src="../assets/images/Twitter or X.png" alt="Twitter Logo">
+            </button>
+          </div>
+        </div>
+        <button  class="popup_close_btn" type="button" id="popupCloseBtn" aria-label="Close Popup">
+          <img src="../assets/images/cross icon.png" alt="Close Icon">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+const popupCloseBtn = document.getElementById("popupCloseBtn");
+
+popupCloseBtn.addEventListener("click", function () {
+  const popupOverlay = document.getElementById("popupOverlay");
+  popupOverlay.style.display = "none";
+});
+
+
+
+  </script> 
+</body>
+
+</html>

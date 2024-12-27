@@ -1,0 +1,27 @@
+
+
+
+
+.header_container .header_top_list .item .header_top_text {
+    color: #323232;
+}
+
+@media (min-width: 1281px) and (max-width: 1399px) {
+    .header_container {
+        /* padding: 0 25px; */
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header_container {
+        /* padding: 0 25px; */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+}
